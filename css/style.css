@@ -1,0 +1,159 @@
+﻿:root {
+    --bg-dark: #0F172A;
+    --card-bg: #1E293B;
+    --cyan: #00D4FF;
+    --text-white: #F8FAFC;
+}
+
+/* CỐ ĐỊNH DESKTOP */
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Montserrat', sans-serif;
+    min-width: 1240px; /* Chống vỡ layout khi thu nhỏ cửa sổ */
+    overflow-x: auto;
+}
+
+.container {
+    width: 1200px !important;
+    max-width: none !important;
+}
+
+.text-cyan {
+    color: var(--cyan);
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: rgba(15, 23, 42, 0.98);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+    height: 80px;
+}
+
+.nav-link {
+    font-weight: 600;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+    .nav-link:hover {
+        color: var(--cyan) !important;
+    }
+
+/* HERO */
+.hero-section {
+    padding: 120px 0;
+    background: radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.15), transparent 40%);
+}
+
+.hero-img {
+    border: 3px solid var(--cyan);
+    padding: 15px;
+    transition: 0.5s;
+}
+
+    .hero-img:hover {
+        box-shadow: 0 0 50px rgba(0, 212, 255, 0.4);
+    }
+
+/* CATEGORY CARD */
+.category-card {
+    height: 300px;
+    padding: 40px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+    .category-card:hover {
+        transform: translateY(-10px);
+        border-color: var(--cyan);
+    }
+
+.laptop {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://media.istockphoto.com/id/906347962/fr/photo/ordinateur-portable-de-jeu-avec-la-souris-connect%C3%A9e-et-le-casque.webp?a=1&b=1&s=612x612&w=0&k=20&c=cr0ZySEFWnIB4snTTsI92cidmAbhIlTDsNbPBXKztjs=');
+}
+
+.pc {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1660855551740-4474188debdb?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+/* PRODUCT CARD */
+.product-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255,255,255,0.05);
+    padding:0px !important;
+}
+
+    .product-card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+        border-color: var(--cyan);
+    }
+        
+.bg-dark-card {
+    background: rgba(15, 23, 42, 0.4);
+}
+
+.badge-new {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--cyan);
+    color: #000;
+    padding: 3px 12px;
+    border-radius: 5px;
+    font-weight: 800;
+    z-index: 2;
+}
+
+.product-title {
+    height: 2.5rem;
+    overflow: hidden;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* BUTTONS */
+.btn-cyan {
+    background: var(--cyan);
+    color: #000;
+    border: none;
+    font-weight: 700;
+}
+
+    .btn-cyan:hover {
+        background: #00b8e6;
+    }
+
+.btn-outline-cyan {
+    border: 2px solid var(--cyan);
+    color: var(--cyan);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+    .btn-outline-cyan:hover {
+        background: var(--cyan);
+        color: #000;
+    }
+
+.auth-item {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+    .auth-item:hover {
+        color: var(--cyan);
+    }
